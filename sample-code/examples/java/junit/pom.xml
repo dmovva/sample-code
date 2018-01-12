@@ -22,7 +22,7 @@
 				<sonar.jdbc.password>sonar</sonar.jdbc.password>
 				Optional URL to server. Default value is http://localhost:9000 -->
 				<sonar.host.url>
-					http://localhost:9000
+					http://10.0.2.15:9000
 				</sonar.host.url>
 			</properties>
 		</profile>
