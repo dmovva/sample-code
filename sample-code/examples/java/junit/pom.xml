@@ -7,6 +7,26 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>sauce_appium_junit</name>
 	<description>Sample Appium tests using JUnit</description>
+	<profiles>
+		<profile>
+			<id>sonar</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<!-- Example for MySQL
+				<sonar.jdbc.url>
+				  jdbc:mysql://localhost:3306/sonar?useUnicode=true&characterEncoding=utf8
+				</sonar.jdbc.url>
+				<sonar.jdbc.username>sonar</sonar.jdbc.username>
+				<sonar.jdbc.password>sonar</sonar.jdbc.password>
+				Optional URL to server. Default value is http://localhost:9000 -->
+				<sonar.host.url>
+					http://localhost:9000
+				</sonar.host.url>
+			</properties>
+		</profile>
+	</profiles>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
