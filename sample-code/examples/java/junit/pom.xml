@@ -27,10 +27,10 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-        <dependency>
-            <groupId>io.appium</groupId>
-            <artifactId>java-client</artifactId>
-            <version>5.0.0-BETA8</version>
+        	<dependency>
+            		<groupId>io.appium</groupId>
+            		<artifactId>java-client</artifactId>
+            		<version>5.0.0-BETA8</version>
 		</dependency>
 		<dependency>
 			<groupId>com.googlecode.json-simple</groupId>
@@ -59,7 +59,7 @@
 	</dependencies>
 
 	<build>
-		<!-- To define the plugin version in your parent POM -->
+	<!-- To define the plugin version in your parent POM -->
 		<pluginManagement>
 			<plugins>
 			<plugin>
@@ -102,6 +102,13 @@
 						<format>html</format>
                     			</formats>
                 		</configuration>
+				<reportSets>
+          				<reportSet>
+            					<reports>
+              						<report>cobertura</report>
+            					</reports>
+          				</reportSet>
+       	 			</reportSets>
       			</plugin>
     		</plugins>
   	</reporting>
